@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./assets/logo.png" />
+    <title>Spotify - web player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: black">
+    <div class="main">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="./assets/library_icon.png" alt="" />
+              <a href="#">Your Library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="lib-box">
+            <div class="box">
+              <div class="box-p1">Create your first playlist</div>
+              <div class="box-p2">It's easy, we'll help you</div>
+              <button class="badge">Create playlist</button>
+            </div>
+            <div class="box">
+              <div class="box-p1">Let's find some podcast to follow</div>
+              <div class="box-p2">we'll keep you updated on new episodes</div>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /*main-content*/ -->
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="./assets/backward_icon.png" alt="" />
+            <img src="./assets/forward_icon.png" class="hide" alt="" />
+          </div>
+          <div class="sticky-nav-options">
+            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right: 5px"></i
+              >Install App
+            </button>
+            <i class="fa-regular fa-user nav-item"></i>
+          </div>
+        </div>
+       
+          
+        <!-- footer -->
+        <div class="footer">
+          <div class="foot-nav">
+            <div class="foot-content">
+              <div class="foot-about">
+                <div class="list">
+                <ul class="list">
+                  <p style="font-weight: 600;">Company</p>
+                  <p href="">About</p>
+                  <p href="">For the Record</p>
+                  <p href="">Jobs</p>
+                </ul>
+                </div>
+                <div class="list">
+                <ul >
+                  <p style="font-weight: 600;">Communities</p>
+                  <p href="">For Artists</p>
+                  <p href="">Developers</p>
+                  <p href="">Advertising</p>
+                  <p>Investors</p>
+                  <p>Vendors</p>
+                </ul>
+              </div>
+              <div class="list">
+                <ul>
+                  <p style="font-weight: 600;">Useful links</p>
+                  <p href="">Support</p>
+                  <p href="">Free Mobile App</p>
+                </ul>
+              </div>
+              </div>
+            </div>
+            <div class="foot-social">
+              <div class="foot-icon">
+              <div><i class="fa-brands fa-facebook"></i></div>
+              <div><i class="fa-brands fa-instagram"></i></div>
+              <div><i class="fa-brands fa-twitter"></i></div>
+            </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="copyright">© 2023 Spotify AB</div>
+        </div>
+        <!--footer div-->
+      </div><br><br><br>
+      <!-- /*main-content div*/ -->
+      <div class="music-player">
+        <div class="album">
+          <img src="./assets/album_picture.jpeg" class="album-pic" />
+          <div class="para">
+            <p class="song-name">Daylight</p>
+            <p class="singer">David kalan</p>
+          </div>
+          <img src="./assets/album_icon1.png" class="alb-img" />
+          <img src="./assets/album_icon2.png" class="alb-img" alt="" />
+        </div>
+
+        <div class="player">
+          <div class="player-controls">
+            <img
+              src="./assets/player_icon1.png"
+              class="player-control-icon"
+              alt=""
+            />
+            <img
+              src="./assets/player_icon2.png"
+              class="player-control-icon"
+              alt=""
+            />
+            <img
+              src="./assets/player_icon3.png"
+              class="player-control-icon"
+              alt=""
+            />
+            <img
+              src="./assets/player_icon4.png"
+              class="player-control-icon"
+              alt=""
+            />
+            <img
+              src="./assets/player_icon5.png"
+              class="player-control-icon"
+              alt=""
+            />
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">00:00</span>
+            <input type="range" min="0" max="100" class="progress-bar" />
+            <span class="tot-time">3:33</span>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="control-icon">
+            <img src="./assets/controls_icon1.png " class="control-img" />
+            <img src="./assets/controld_icon2.png" class="control-img" alt="" />
+            <img src="./assets/controls_icon3.png" class="control-img" alt="" />
+            <img src="./assets/controls_icon4.png" class="control-img" alt="" />
+            <img src="./assets/controls_icon5.png" class="control-img" alt="" />
+            <input type="range" class="volume" />
+          </div>
+        </div>
+      </div>
+      <!--music player div*/-->
+    </div>
+    <!--main div-->
+  </body>
+</html>
+    
